@@ -1,0 +1,12 @@
+		<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		   android:id="@+id/control_startend"
+		   android:layout_width="200dp"
+		   android:layout_height="48dp"
+		   android:focusable="true"
+		   android:background="@drawable/background_aquarius_menu_item"
+		   android:scaleType="fitCenter"
+		   android:textColor="@color/white"
+		   android:textStyle="bold"
+		   android:textSize="18sp"
+		   android:gravity="center"
+		   />	

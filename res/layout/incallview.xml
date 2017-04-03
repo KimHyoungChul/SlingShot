@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:id="@+id/mainFrame"
+		  android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  >
+		  
+	     
+	 	<RelativeLayout
+		  android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  android:layout_margin="30dp"
+		  >
+		  
+		  
+	     <!-- Video -->
+		 
+		 <SurfaceView
+		   android:id="@+id/video_frame"	  	    
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"        
+		   android:layout_centerInParent="true"
+           />
+		 
+		 <!-- Video replacement -->
+		 <LinearLayout
+		     android:id="@+id/video_replacement"
+		     android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+			 android:layout_centerInParent="true"
+			 android:orientation="vertical"
+			 android:gravity="center"
+			 android:visibility="invisible"
+			 >
+			 <ImageView
+				 android:layout_width="200dp"
+				 android:layout_height="100dp"
+			  	 android:src="@drawable/cisco_white"
+			  	 android:scaleType="fitCenter"
+		     	/>
+			<TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:padding="2dp"   
+				android:text="@string/incallview_text_waiting"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+        		/>
+        </LinearLayout> 
+        
+		 
+		<TextView
+            android:id="@+id/sipLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true"
+			android:padding="2dp"   
+            android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+		
+			 <!-- Volume level -->
+		 <com.cisco.slingshot.ui.widget.VolumeBar
+		     android:id="@+id/volume_bar"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+			 android:layout_alignParentBottom="true"
+			 android:layout_alignParentRight="true"
+			 android:layout_margin="10dp"
+			 android:visibility="invisible"
+		     />
+				
+		<!-- Control panel -->
+		<com.cisco.slingshot.ui.widget.ControlPanel
+			android:id="@+id/control_panel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_alignParentBottom="true"
+			android:padding="2dp"  
+		    />
+		
+		<!-- StatisticView -->
+		<com.cisco.slingshot.ui.statistic.StatisticView
+			android:id="@+id/stat_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_alignParentRight="true"
+			android:padding="2dp"  
+			android:visibility="invisible"
+		    />
+		
+		</RelativeLayout>
+		
+	 			 <!-- Camera --> 
+		 <AbsoluteLayout
+		      android:id="@+id/camera_layer"
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  android:background="@android:color/transparent"
+			  />
+		 
+		 		<!-- Transparent layer ,used to smooth the UI -->	
+		
+		<FrameLayout
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  android:background="@android:color/transparent"
+			  />
+			  
+	</RelativeLayout>
+	

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"	            
+    		android:orientation="vertical"
+    		android:background="@color/black">
+    		
+	    	<TextView 
+	            android:id="@+id/dialer_display"
+	            android:layout_width="320dp"
+	            android:layout_height="60dp"
+	            android:paddingLeft="10dp"
+	            android:paddingRight="10dp"
+	            android:layout_marginBottom="2dp"
+	            android:textSize="40sp"
+	            android:textStyle="bold"
+	            android:background="@drawable/background_dialer_item"
+	            android:ellipsize="end"
+	      		android:maxLines="2"
+	      		android:maxLength="14"/>
+    		
+		    <GridView
+			    android:id="@+id/dialer_grid"
+				android:layout_width="320dp" 
+				android:layout_height="240dp"
+			    android:verticalSpacing="1dp"
+			    android:horizontalSpacing="1dp"
+			    android:numColumns="3"
+			    android:gravity="center"
+			    android:stretchMode="columnWidth"
+			    android:listSelector="@null"
+		    />
+		    
+		    
+		   <LinearLayout 
+	            android:layout_width="320dp"
+	            android:layout_height="60dp"         
+	    		android:gravity="center"
+	    		android:layout_marginTop="2dp"
+	    		android:orientation="horizontal" >
+	    		<!-- 
+		  		<Button
+			   android:id="@+id/num_char_switch"
+			   android:layout_width="0dp"
+			   android:layout_weight="1"
+			   android:layout_height="fill_parent"
+			   android:background="@drawable/background_dialer_item"
+			   android:scaleType="fitCenter"
+			   android:layout_marginRight="1dp"
+			   android:text="数/英"
+			   />		   
+			   -->
+			   
+		  		<LinearLayout 
+					android:id="@+id/num_char_switcher"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:layout_height="fill_parent"
+					android:background="@drawable/background_dialer_item"
+					android:layout_marginRight="1dp" 
+					android:focusable="true"
+					android:gravity="center"
+				>
+  		    
+	  		    <TextView
+	  		        android:id="@+id/switcher_num"
+	  		      	android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:text="@string/diag_outgoing_btn_switcher_num"
+					android:textStyle="bold"
+					android:gravity="center"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+				/>
+  		    
+	  		    <TextView
+	  		      	android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:text="@string/diag_outgoing_btn_switcher_slash"
+					android:textStyle="bold"
+					android:gravity="center"
+					android:textAppearance="?android:attr/textAppearanceLarge"/>
+	  		    
+	  		    
+	  		    <TextView
+	  		        android:id="@+id/switcher_eng"
+	  		      	android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:text="@string/diag_outgoing_btn_switcher_eng"
+					android:textStyle="bold"
+					android:gravity="center"
+					android:textAppearance="?android:attr/textAppearanceLarge"/>
+	  		    
+  		    </LinearLayout>
+  		    
+  		
+			<ImageButton
+			   android:id="@+id/dial_button"
+			   android:layout_width="0dp"
+			   android:layout_weight="2"
+				   android:layout_height="fill_parent"
+			   android:background="@drawable/background_dialer_item"
+			   android:src="@drawable/ic_call_start"
+			   android:layout_marginRight="1dp"
+			   android:layout_marginLeft="1dp"
+			   />	
+			<ImageButton
+			   android:id="@+id/dial_backspace"
+			   android:layout_width="0dp"
+			   android:layout_weight="1"
+			   android:layout_height="fill_parent"
+			   android:background="@drawable/background_dialer_item"
+			   android:scaleType="fitCenter"
+			   android:layout_marginLeft="1dp"
+			   android:src="@drawable/ic_backspace"
+			 />	
+ 		</LinearLayout>
+						    
+
+	</LinearLayout>
+     

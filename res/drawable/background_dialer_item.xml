@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+     
+     <item android:state_pressed="true" 
+        android:drawable="@drawable/shape_gray_corner_rect" />
+         
+     <item 
+	        android:state_focused="true" 
+	        android:drawable="@drawable/shape_gray_corner_rect_yellow_focus_ring" />
+     
+     <item 
+	    android:state_selected="true" 
+	    android:drawable="@drawable/shape_yellow_corner_rect" />
+     
+     <item android:drawable="@drawable/shape_gray_corner_rect" />
+     
+     <!-- 
+     <item 
+       android:state_focused="true" 
+       android:drawable="@drawable/green_button_2" />
+     
+     
+     <item 
+       android:state_pressed="true" 
+       android:drawable="@drawable/green_button_3" />
+     
+     <item android:drawable="@drawable/green_button_1" />
+     -->
+ </selector>

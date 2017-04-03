@@ -1,0 +1,9 @@
+<Gallery  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/aquarius_menu_gallery"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:spacing="40dp"
+	android:layout_centerInParent="true"
+	android:layout_alignParentBottom="true"
+	android:layout_margin="6dp"  
+	/>

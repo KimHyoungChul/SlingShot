@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    
+    <ImageView 
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="11dip"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitCenter"
+    	android:src="@drawable/ic_info"/>
+    
+    <TextView 
+        android:id="@+id/diag_notification_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:ellipsize="marquee"
+        android:maxLines="2"
+        android:layout_marginBottom="2dip" />
+    
+    <!-- 
+    <EditText
+        android:id="@+id/edttxt_adddlg_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+    -->
+    
+</LinearLayout>

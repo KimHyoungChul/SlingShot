@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="360dp"
+    android:background="@drawable/selector_controlpanel_highlight_background">
+
+	<com.cisco.slingshot.ui.quickcall.QuickCallMenuView 
+	    android:id="@+id/quick_call_menu" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:visibility="visible"/>
+	
+	<com.cisco.slingshot.ui.quickcall.QuickCallContactListView 
+	    android:id="@+id/quick_call_contact" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:visibility="gone"/>
+	
+	<com.cisco.slingshot.ui.quickcall.QuickCallContactDetailView 
+	    android:id="@+id/quick_call_contact_detail" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:visibility="gone"/>
+		
+</RelativeLayout>

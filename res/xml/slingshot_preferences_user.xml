@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2010 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+     <PreferenceCategory android:title="@string/settings_main_item_user_category_account_source" >
+                
+        <ListPreference 
+			android:key="@string/key_settings_user_account_source" 
+			android:title="@string/settings_user_account_source_title"
+			android:defaultValue="@string/settings_user_account_source_default" 
+			android:entries="@array/accountSourceTitle" 
+			android:entryValues="@array/accountSourceValue"
+			/> 
+     </PreferenceCategory>
+     
+
+     
+    <PreferenceCategory android:title="@string/settings_main_item_user_category_local_setting" 
+         >
+	    <EditTextPreference
+	        android:name="SIP Username"
+	        android:summary="@string/settings_user_account_username_des"
+	        android:defaultValue=""
+	        android:title="@string/settings_user_account_username"
+	        android:key="@string/str_pref_username" 
+	        />
+	    <EditTextPreference
+	        android:name="SIP Domain"
+	        android:summary="@string/settings_user_account_domain_des"
+	        android:defaultValue=""
+	        android:title="@string/settings_user_account_domain"
+	        android:key="@string/str_pref_domain" 
+	        />
+	    <EditTextPreference
+	        android:name="SIP Password" 
+	        android:summary="@string/settings_user_account_password_des"
+	        android:defaultValue=""
+	        android:title="@string/settings_user_account_password"
+	        android:key="@string/str_pref_password"
+	        android:password="true" /> 
+	    <EditTextPreference
+	        android:name="SIP Proxy"
+	        android:summary="@string/settings_user_account_proxy_des"
+	        android:defaultValue=""
+	        android:title="@string/settings_user_account_proxy"
+	        android:key="@string/str_pref_proxy" /> 
+	        
+	    <EditTextPreference
+	        android:name="SIP Port"
+	        android:summary="@string/settings_user_account_port_des"
+	        android:defaultValue=""
+	        android:title="@string/settings_user_account_port"
+	        android:key="@string/str_pref_port" />   
+	        
+		<ListPreference 
+			android:key="@string/str_pref_protocol" 
+			android:title="@string/settings_user_account_protocol"
+			android:summary="@string/settings_user_account_protocol_des" 
+			android:defaultValue="@string/settings_connection_protocol_default" 
+			android:entries="@array/sipConnectionProtocol" 
+			android:entryValues="@array/sipConnectionProtocol"/>    
+	</PreferenceCategory>    
+</PreferenceScreen>

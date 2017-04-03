@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/settings_video_category_video_encoder">
+		<!-- 
+		<ListPreference
+		    android:key="@string/key_video_codec"
+		    android:title="@string/settings_video_codec_title"
+		    android:summary="@string/settings_video_codec_title_des"
+		    android:defaultValue="@string/settings_video_codec_default"
+		    android:entries="@array/videoCodec"
+		    android:entryValues="@array/videoCodec"
+		/>  
+		-->
+		<ListPreference
+		    android:key="@string/key_video_bit_rate"
+		    android:title="@string/settings_video_bitrate_title"
+		    android:summary="@string/settings_video_bitrate_title_des"
+		    android:defaultValue="@string/settings_video_bitrate_default"
+		    android:entries="@array/videoBitRateTitle"
+		    android:entryValues="@array/videoBitRate"
+		/>  
+		
+		<ListPreference
+		    android:key="@string/key_video_resolution"
+		    android:title="@string/settings_video_resolution_title"
+		    android:summary="@string/settings_video_resolution_title_des"
+		    android:defaultValue="@string/settings_video_resolution_default"
+		    android:entries="@array/videoResolution"
+		    android:entryValues="@array/videoResolution"
+		/> 
+		
+		<ListPreference
+		    android:key="@string/key_video_frame_rate"
+		    android:title="@string/settings_video_framerate_title"
+		    android:summary="@string/settings_video_framerate_title_des"
+		    android:defaultValue="@string/settings_video_framerate_default"
+		    android:entries="@array/videoFrameRate"
+		    android:entryValues="@array/videoFrameRate"
+		/> 
+		<!-- 
+		<EditTextPreference
+		 	android:key="@string/key_video_frame_rate"
+		 	android:title="@string/settings_video_framerate_title"
+	        android:summary="@string/settings_video_framerate_title_des"
+	        android:defaultValue="30"
+	     />
+	     -->
+	</PreferenceCategory>
+	
+ 	<PreferenceCategory android:title="@string/settings_video_category_camera">
+	    <CheckBoxPreference
+	      android:key="@string/key_camera_auto_focus"
+	      android:summary="@string/settings_video_camera_auto_focus_des"
+	      android:title="@string/settings_video_camera_auto_focus"
+	      android:defaultValue="false" />
+	      
+	      
+	</PreferenceCategory>  
+	
+	<!-- 
+	<PreferenceCategory android:title="Developer">
+	    <CheckBoxPreference
+	      android:key="@string/key_local_video_test"
+	      android:summary="Record to local FD and playback, no SIP and network stream "
+	      android:title="Enable local video test"
+	      android:defaultValue="false"
+	  />
+	</PreferenceCategory>
+	-->
+	
+</PreferenceScreen>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:background="@drawable/background_dialer_selector_item" 
+              android:orientation="vertical"
+              >
+              
+        <TextView 
+            android:id="@+id/dialer_sub_selector_item_text"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="32sp"/>
+        
+         <ImageView 
+            android:id="@+id/dialer_sub_selector_item_indicator"
+            android:layout_width="20dp"
+            android:layout_height="6dp"/>
+        
+              
+</LinearLayout>

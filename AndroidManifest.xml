@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cisco.slingshot"
+    android:versionCode="1"
+    android:versionName="@string/slingshot_version">
+
+    <!-- 
+    <uses-sdk android:minSdkVersion="9" />
+    -->
+	<uses-sdk android:minSdkVersion="9" android:targetSdkVersion="9" />
+    <!-- feature  -->
+    <uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.front" />
+	<uses-feature android:name="android.hardware.sip.voip" android:required="true" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="true" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    
+	<!-- permission  -->
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" ></uses-permission>
+    <uses-permission android:name="android.permission.USE_SIP" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />  
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" /> 
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="com.CTC_ChinaNet.android.tm.SERVICES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    
+	
+    <application
+        android:largeHeap="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:debuggable="true"
+        android:name="com.cisco.slingshot.SlingshotApplication">
+        
+        <!-- Activities -->
+
+        <activity
+            android:name="com.cisco.cdbu.smarthomeportal.subactivity.LaunchingSplash"
+            android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="smarthome.intent.action.tv" />
+                <action android:name="smarthome.intent.action.vc" />
+                <action android:name="smarthome.intent.action.training" />
+                <action android:name="smarthome.intent.action.control" />
+                <action android:name="smarthome.intent.action.surveillance" />
+                <action android:name="smarthome.intent.action.life" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.Splashscreen"
+            android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name=".activity.SettingMainActivity"
+            android:label="Settings"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="slingshot.intent.action.SETTINGS" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".activity.VideoSettingsPref"
+            android:label="Video Profile">
+            <intent-filter>
+                <action android:name="slingshot.intent.action.SETTINGS_VIDEO" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".activity.AccountSettingsPref" 
+            android:label="User Account">
+            <intent-filter>
+                <action android:name="slingshot.intent.action.SETTINGS_ACCOUNT" />
+            </intent-filter>
+        </activity>
+        
+       	<activity 
+            android:name=".activity.ContactListActivity"
+            android:label="@string/app_name">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+        
+        
+        <activity 
+            android:name=".activity.FragmentMainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+	      <intent-filter>
+	            <category android:name="android.intent.category.DEFAULT" />
+	        </intent-filter>
+        </activity>
+        
+       <activity 
+            android:name=".activity.AquariusActivity"
+            android:label="@string/app_name">
+	      <intent-filter>
+	            <category android:name="android.intent.category.DEFAULT" />
+	        </intent-filter>
+        </activity>
+        
+       <activity 
+            android:name=".activity.VideoTestActivity"
+            android:label="@string/app_name">
+	      <intent-filter>
+	            <category android:name="android.intent.category.DEFAULT" />
+	        </intent-filter>
+        </activity>
+        
+	    <activity android:name="com.cisco.slingshot.activity.InCallActivity"
+		  android:label="@string/app_name"
+		  android:screenOrientation="landscape" >
+		  <!-- configure this activity to use landscape orientation -->
+		
+		    <intent-filter>
+		        <action android:name="slingshot.intent.action.INCOMING_CALL" />
+		        <action android:name="slingshot.intent.action.OUTGOING_CALL" />
+		    </intent-filter>
+		    
+		    <intent-filter>
+	            <action android:name="android.intent.action.CALL_PRIVILEGED" />
+	            <category android:name="android.intent.category.DEFAULT" />
+	            <data android:scheme="tel" />
+	        </intent-filter>
+	        
+		    <intent-filter>
+	            <action android:name="android.intent.action.CALL_PRIVILEGED" />
+	            <category android:name="android.intent.category.DEFAULT" />
+	            <data android:scheme="sip" />
+	        </intent-filter>
+		    
+		</activity>
+		
+		<activity
+            android:name="com.cisco.slingshot.utils.CallTaskLoadingActivityDialog"
+            android:label="@string/incallview_loading_dialog_title" 
+            android:theme="@android:style/Theme.Dialog" >
+        </activity> 
+		
+		
+	    <!-- Broadcast Receiver -->
+	
+	    <receiver android:name=".receiver.IncomingCallReceiver" android:label="Call Receiver"/>
+
+
+	   	<receiver android:name=".receiver.IPTVLaunchReceiver">
+	   	    <intent-filter> 
+        		<action android:name="cisco.slingshot.action.IPTV" /> 
+    		</intent-filter> />
+	    </receiver>  
+	    
+	   	<receiver android:name=".receiver.QuickCallReceiver">
+	   	    <intent-filter> 
+        		<action android:name="cisco.slingshot.action.QUICK_CALL" /> 
+    		</intent-filter> />
+	    </receiver>  
+	     
+	    <receiver android:name="com.cisco.slingshot.receiver.BootCompletedReceiver" >
+	        <intent-filter> 
+        		<action android:name="android.intent.action.BOOT_COMPLETED" /> 
+    		</intent-filter> />
+	    </receiver> 
+	    
+	    <!-- 
+	    <receiver android:name="com.cisco.slingshot.receiver.EthenetHotPlugEventReceiver" >
+	        <intent-filter> 
+        		<action android:name="cisco.action.net.eth0.add" /> 
+        		<action android:name="cisco.action.net.eth0.remove" /> 
+    		</intent-filter> />
+	    </receiver> 
+	    -->
+	    
+	    <!-- Services -->
+	    <service android:name = ".service.SlingShotService" >
+	        <intent-filter>
+				<action android:name="cisco.action.service.slingshot" />
+			</intent-filter>
+		</service>
+			
+	    <service android:name = "com.cisco.slingshot.service.SocketListenerService" />
+	    
+	   	<service android:name = "com.cisco.slingshot.service.IMSServiceStub">
+			<intent-filter>
+				<action android:name="cisco.action.IMS_SERBVICE_STUB" />
+			</intent-filter>
+		<meta-data android:name="type" android:value="native" />
+		</service>
+
+	
+    </application>
+    
+</manifest>

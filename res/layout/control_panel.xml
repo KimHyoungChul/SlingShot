@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+	 >
+	
+    
+    <TextSwitcher
+        android:id="@+id/control_indicator"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:visibility="invisible"
+        />
+        
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    >
+	
+	   	<ImageButton
+		   android:id="@+id/control_microphone"
+		   android:layout_width="64dp"
+		   android:layout_height="48dp"
+		   android:layout_margin="5dp"
+		   android:background="@drawable/selector_controlpanel_highlight_background"
+		   android:scaleType="fitCenter"
+		   />		   
+		<ImageButton
+		   android:id="@+id/control_camera"
+		   android:layout_width="64dp"
+		   android:layout_height="48dp"
+		   android:layout_margin="5dp"
+		   android:background="@drawable/selector_controlpanel_highlight_background"
+		   android:scaleType="fitCenter"
+		   />	
+		<ImageButton
+		   android:id="@+id/control_speeker"
+		   android:layout_width="64dp"
+		   android:layout_height="48dp"
+		   android:layout_margin="5dp"
+		   android:background="@drawable/selector_controlpanel_highlight_background"
+		   android:scaleType="fitCenter"
+		   android:visibility="gone"
+		 />	
+		 
+		
+		<ImageButton
+		   android:id="@+id/control_local_video"
+		   android:layout_width="64dp"
+		   android:layout_height="48dp"
+		   android:layout_margin="5dp"
+		   android:background="@drawable/selector_controlpanel_highlight_background"
+		   android:scaleType="fitCenter"
+		 />	
+		 <!-- 
+		<ImageButton
+		   android:id="@+id/control_pause"
+		   android:layout_width="60dp"
+		   android:layout_height="48dp"
+		   android:layout_margin="5dp"
+		   android:background="@drawable/selector_controlpanel_highlight_background"
+		   android:scaleType="fitCenter"
+		   android:src="@android:drawable/stat_sys_phone_call_on_hold"
+		 />	
+		 -->
+		<ImageButton
+		   android:id="@+id/control_stat"
+		   android:layout_width="60dp"
+		   android:layout_height="48dp"
+		   android:layout_margin="5dp"
+		   android:background="@drawable/selector_controlpanel_highlight_background"
+		   android:scaleType="fitCenter"
+		 />	
+		 
+		<ImageButton
+		   android:id="@+id/control_startend"
+		   android:layout_width="200dp"
+		   android:layout_height="48dp"
+		   android:layout_margin="5dp"
+		   android:focusable="true"
+		   android:background="@drawable/selector_controlpanel_highlight_background"
+		   android:scaleType="fitCenter"
+		   android:src="@drawable/ic_call_stop"
+		   />	
+		   
+		  
+	</LinearLayout>
+	<!--  
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+		android:layout_alignParentBottom="true"
+		android:padding="2dp"   
+	    >
+		<ImageButton
+		   android:id="@+id/control_startend"
+		   android:layout_width="200dp"
+		   android:layout_height="48dp"
+		   android:layout_margin="5dp"
+		   android:focusable="true"
+		   android:background="@drawable/selector_controlpanel_highlight_background"
+		   android:scaleType="fitCenter"
+		   android:src="@drawable/ic_call_stop"
+		   />	
+		   
+		<ImageButton
+		   android:id="@+id/control_pause"
+		   android:layout_width="60dp"
+		   android:layout_height="48dp"
+		   android:layout_margin="5dp"
+		   android:background="@drawable/selector_controlpanel_highlight_background"
+		   android:scaleType="fitCenter"
+		   android:src="@android:drawable/stat_sys_phone_call_on_hold"
+		 />	
+	 </LinearLayout>
+-->
+</LinearLayout>

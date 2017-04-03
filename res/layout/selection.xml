@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  	<!-- 
+	 <LinearLayout 
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content"
+	   android:orientation="horizontal"
+	   android:paddingRight="6dip"
+	   android:paddingLeft="6dip"
+	   android:background="@color/dark_gray"
+	   android:gravity="center_vertical" >
+	
+	    <ImageView 
+	        android:layout_width="@android:dimen/app_icon_size"
+	        android:layout_height="@android:dimen/app_icon_size"
+	        android:layout_marginLeft="5dip"
+	        android:layout_marginRight="11dip"
+	        android:layout_gravity="center_vertical"
+	        android:scaleType="fitCenter"
+	    	android:src="@drawable/ic_cisco"/> 
+	    	
+	 
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textStyle="italic"
+		    android:text="@string/selection_text_title"
+		    android:ellipsize="marquee"
+		    android:maxLines="2"
+		    android:layout_marginBottom="2dip" /> 
+	
+	
+	</LinearLayout>
+    
+    -->
+    <com.cisco.slingshot.ui.FragmentListView  
+        android:id="@+id/selection_list" 
+        android:layout_height="fill_parent" 
+        android:layout_width="fill_parent" 
+        android:background="@drawable/background"
+ 		android:cacheColorHint="#00000000" />
+    
+</LinearLayout>

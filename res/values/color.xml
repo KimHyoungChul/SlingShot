@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#ffffff</color>
+    <!-- VideoScape -->
+    <color name="black">#000000</color>
+    <color name="black_transparent_strong">#BB000000</color>
+    <color name="black_transparent_weak">#55000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_semi_transparent">#77FFFFFF</color>
+    <color name="white_low_transparent">#23DDDDDD</color>
+    <color name="white_transparent">#00DDDDDD</color>
+    <color name="white_dim">#999999</color>
+    <color name="cisco_red">#B21A1A</color>
+    <color name="cisco_green">#015F85</color>
+    <color name="transparent_dark_gray">#BB777777</color>
+    <color name="transparent_gray">#BB444444</color>
+    <color name="gray">#666666</color>
+    <color name="dark_gray">#333333</color>
+    <color name="dark_gray_transparent_strong">#BB333333</color>
+    <color name="dark_gray_transparent_weak">#55333333</color>
+    <color name="highlight_yellow">#FFB443</color>
+    <color name="black_transparent_background">#99000000</color>
+    <color name="massive_text_unfocused_gray">#9A9A9A</color>
+    <color name="massive_dark_dark_gray">#0E0E0E</color>
+    <color name="massive_dark_gray">#1C1C1C</color>
+    <color name="massive_light_gray">#2A2A2A</color>
+    <color name="massive_light_light_gray">#5A5A5A</color>
+    <color name="massive_pink">#E12758</color>
+    <color name="massive_bright_green">#61ce38</color>
+    <color name="massive_green">#62be58</color>
+    <color name="massive_blue_green">#36ab80</color>
+    <color name="massive_baby_blue_light">#0098c0</color>
+    <color name="massive_baby_blue_dark">#0089b5</color>
+    <color name="mountain_blue">#013269</color>
+    <color name="mountain_gold">#fdcd00</color>
+    <color name="transparent">#00000000</color>
+    <color name="voo_pink">#c93592</color>
+    
+    <!-- SlingShot -->
+    <color name="red">#ff600000</color>
+    <color name="red_transparent_strong">#BB600000</color>
+    <color name="red_transparent_weak">#7f600000</color>
+    
+    <color name="cisco_red_transparent_strong">#BBB21A1A</color>
+    <color name="cisco_red_transparent_weak">#7fB21A1A</color>
+    
+    <color name="cisco_green_transparent_strong">#BB015F85</color>
+    <color name="cisco_green_transparent_weak">#7f015F85</color>
+    
+    <color name="steel_blue">#BB4682B4</color>
+    
+ 
+    
+</resources>

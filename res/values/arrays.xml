@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="videoCodec">
+        <item name="h264">@string/settings_video_codec_h264</item>
+        <item name="mpeg4">@string/settings_video_codec_mpeg4</item>
+    </string-array>
+   
+    <string-array name="videoResolution">
+        <item name="480p">@string/settings_video_resolution_480p</item>
+        <item name="720p">@string/settings_video_resolution_720p</item>
+    </string-array>
+    
+    <string-array name="videoFrameRate">
+        <item name="15fps">@string/settings_video_framerate_15</item>
+        <item name="30fps">@string/settings_video_framerate_30</item>
+    </string-array>
+    
+    <string-array name="videoBitRate">
+        <item name="low">@string/settings_video_bitrate_low</item>
+        <item name="middle">@string/settings_video_bitrate_middle</item>
+        <item name="high">@string/settings_video_bitrate_high</item>
+        <item name="super">@string/settings_video_bitrate_super</item>
+    </string-array>
+    <string-array name="videoBitRateTitle">
+        <item name="low">@string/settings_video_bitrate_low_title</item>
+        <item name="middle">@string/settings_video_bitrate_middle_title</item>
+        <item name="high">@string/settings_video_bitrate_high_title</item>
+        <item name="super">@string/settings_video_bitrate_super_title</item>
+    </string-array>
+    
+    <string-array name="sipConnectionProtocol">
+        <item name="TCP">@string/settings_connection_protocol_tcp</item>
+        <item name="UDP">@string/settings_connection_protocol_udp</item>
+        <item name="SCTP">@string/settings_connection_protocol_sctp</item>
+        <item name="TLS">@string/settings_connection_protocol_tls</item>
+    </string-array>
+    
+    <string-array name="accountSourceValue">
+        <item name="ims">@string/settings_user_account_source_ims</item>
+        <item name="local">@string/settings_user_account_source_local</item>
+    </string-array>
+    
+    <string-array name="accountSourceTitle">
+        <item name="ims">@string/settings_user_account_source_ims_title</item>
+        <item name="local">@string/settings_user_account_source_local_title</item>
+    </string-array>
+    
+</resources>

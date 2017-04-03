@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+     
+    <TextView android:id="@+id/diag_outgoing_call_launcher_main_menu_title"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:textColor="@color/white"
+              android:textSize="25sp"
+              android:textStyle="bold"
+              android:paddingBottom="15dp"
+              android:text="@string/diag_outgoing_call_launcher_main_menu_title"
+              />
+    <ListView android:id="@+id/diag_outgoing_call_launcher_main_menu_list"
+              android:layout_width="320dp"
+              android:layout_height="360dp"
+              android:visibility="visible"
+              >
+   			 <requestFocus />
+     </ListView>
+
+	
+	
+     
+ </LinearLayout>

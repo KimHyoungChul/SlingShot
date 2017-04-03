@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cisco.slingshot.ui.CameraFrame  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/camera_frame"
+	android:layout_width="320dp"
+	android:layout_height="240dp"
+   	android:layout_alignParentLeft="true"
+  	android:layout_alignParentBottom="true"
+	android:focusable="true"
+	android:background="@drawable/selector_highlight_background">
+	
+	<SurfaceView
+	   android:id="@+id/camera_preview"
+	   android:layout_width="fill_parent"
+	   android:layout_height="fill_parent"
+	   android:layout_margin="5dp"
+	   />	
+	   
+	<RelativeLayout 
+	    android:id="@+id/CameraFrameController"
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="invisible">
+		<ImageView
+		  android:id="@+id/arrowLeft"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_alignParentLeft="true"
+		  android:layout_centerVertical="true"
+		  android:src="@drawable/arrow_left_white"
+		  />
+		 
+		<ImageView
+		  android:id="@+id/arrowUp"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_centerHorizontal="true"
+		  android:layout_alignParentTop="true"
+		  android:src="@drawable/arrow_up_white"
+		  />
+		   
+		  
+		<ImageView
+		  android:id="@+id/arrowRight"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_alignParentRight="true"
+		  android:layout_centerVertical="true"
+		  android:src="@drawable/arrow_right_white"
+		  />
+		  
+		<ImageView
+		  android:id="@+id/arrowDown"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_alignParentBottom="true"
+		  android:layout_centerHorizontal="true"
+		  android:src="@drawable/arrow_down_white"
+		  />
+	 </RelativeLayout>
+		
+</com.cisco.slingshot.ui.CameraFrame>

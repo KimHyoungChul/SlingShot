@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="str_splash">视频通话</string>
+    <string name="str_contactlist_title">SlingShot</string>
+    <string name="str_contactlist_settings">Settings</string>
+    <string name="str_contactlist_add">Add</string>
+    <string name="str_contact_db_name">contact.db</string>
+    <string name="str_contact_db_table">SipContact</string>
+    <string name="str_contact_col_username">用户名</string>
+    <string name="str_contact_col_address">帐号</string>
+    <string name="str_contact_adddlg_title">添加联系人</string>
+     <string name="str_contact_editdlg_title">编辑联系人</string>
+     <string name="str_contact_deldlg_title">删除</string>
+     <string name="str_contact_warning_invalid_account">用户名或者帐号不能为空</string>
+     
+    <string name="str_start_videocall">Star Video Call</string>
+    <string name="str_del_user">Delete user</string>
+    <string name="str_contact_op">operate on</string>
+    <string name="str_contact_name">ContactNameKey</string>
+    <string name="str_contact_addr">ContactAddrKey</string>
+    <string name="str_bundle_outgoing">outgoing_call</string>
+    
+    <string name="str_pref_username">username</string>
+    <string name="str_pref_password">password</string>
+    <string name="str_pref_domain">domain</string>
+    <string name="str_pref_proxy">proxy</string>
+    <string name="str_pref_port">port</string>
+    <string name="str_pref_protocol">protocol</string>
+    
+    <string name="str_sipstatus_registering">Registering</string>
+    <string name="str_sipstatus_registered">Registered</string>
+    <string name="str_sipstatus_registerfail">Register Fail</string>
+    
+    <!-- Yuan Cui -->
+	<string name="contact_text_details">详情</string>
+	<string name="contact_text_address">地址</string>
+	<string name="contact_text_status">状态</string>
+	<string name="contact_text_status_detail">离线</string>
+	<string name="contact_text_edit_botton">编辑</string>
+	<string name="contact_text_delete_botton">删除</string>
+	<string name="contact_text_history">历史</string>
+	<string name="contact_item_text_name">用户名</string>
+	<string name="contactlist_footer_text_addone_menu_item_name">添加联系人</string>
+
+	<string name="diag_incoming_call_text_btn_answser">接受</string>
+	<string name="diag_incoming_call_text_btn_replace">接受(替换当前)</string>
+	<string name="diag_incoming_call_text_btn_deny">拒绝</string>
+
+	<string name="fragment_layout_statusbar_text">未注册</string>
+	<string name="fragment_layout_app_ver_text">应用版本：</string>
+	<string name="fragment_layout_sys_ver_text">系统版本：</string>
+	
+	<string name="diag_outgoing_call_text_btn_cancel">取消</string>
+
+	
+	<string name="incallview_loading_dialog_title">加载中...</string>
+	
+	<string name="incallview_text_sipLabel">default</string>
+	<string name="incallview_text_waiting">等待接收视频......</string>
+	<string name="incallview_control_panel_indicator_speaker">麦克风 开/关</string>
+	<string name="incallview_control_panel_indicator_camera">摄像头 开/关</string>
+	<string name="incallview_control_panel_indicator_pip">本地画面 隐藏/显示</string>
+	<string name="incallview_control_panel_indicator_call_end">结束通话</string>
+	<string name="incallview_control_panel_indicator_statistic">显示统计</string>
+	
+	<string name="call_status_calling">正在呼叫......</string>
+	<string name="call_status_established">正在接通......</string>
+	<string name="call_status_end">通话结束！</string>
+	<string name="call_status_busy">对方正忙！</string>
+	<string name="call_status_audio_only">音频通话中！</string>
+	
+	<string name="selection_text_title">SlingShot</string>
+	
+	<string name="main_status_bar_text_connect">已登录</string>
+	<string name="main_status_bar_text_disconnect">未能登录</string>
+	<string name="main_status_bar_text_connecting">正尝试连接 </string>
+
+	<string name="main_menu_item_contact">联系人</string>
+	<string name="main_menu_item_settings">设置</string>
+	
+	<string name="settings_main_item_user_account">帐号</string>
+	<string name="settings_main_item_user_account_des">帐号信息</string>
+	
+	<string name="settings_main_item_user_category_account_source">帐号来源</string>
+	<string name="settings_main_item_user_category_local_setting">本地设置</string>
+	
+	<string name="settings_user_account_source_title">帐号获取方式</string>
+	<string name="settings_user_account_source_ims_title">从服务器端获取</string>
+	<string name="settings_user_account_source_local_title">从本地设置获取</string>
+	
+	<string name="settings_user_account_username">用户名</string>
+	<string name="settings_user_account_username_des">输入SIP帐号的用户名</string>
+	<string name="settings_user_account_domain">域名</string>
+	<string name="settings_user_account_domain_des">输入SIP帐号的域名</string>
+	<string name="settings_user_account_password">密码</string>
+	<string name="settings_user_account_password_des">输入SIP帐号的密码</string>
+	<string name="settings_user_account_proxy">代理</string>
+	<string name="settings_user_account_proxy_des">输入代理服务器地址</string>
+	<string name="settings_user_account_port">端口</string>
+	<string name="settings_user_account_port_des">输入SIP服务器端口</string>
+	<string name="settings_user_account_protocol">协议</string>
+	<string name="settings_user_account_protocol_des">选择连接SIP服务器的协议</string>
+	
+	
+	<string name="settings_main_item_video_profile">视频</string>
+	<string name="settings_main_item_video_profile_des">设置视频的相关参数</string>
+
+
+	 <string name="settings_video_category_video_encoder">视频输出</string>
+	 <string name="settings_video_category_camera">摄像头</string>
+	 	
+    <string name="settings_video_codec_title">编码格式</string>
+    <string name="settings_video_codec_title_des">选择视频格式</string>
+    <string name="settings_video_codec_h264">H.264</string>
+    <string name="settings_video_codec_mpeg4">MPEG4</string>
+    <string name="settings_video_codec_default">H.264</string>
+    
+    <string name="settings_video_resolution_title">分辨率</string>
+    <string name="settings_video_resolution_title_des">选择输出视频分辨率</string>
+    <string name="settings_video_resolution_480p">480p</string>
+    <string name="settings_video_resolution_720p">720p</string>
+    <string name="settings_video_resolution_default">480p</string>
+    
+    <string name="settings_video_framerate_title">帧率</string>
+    <string name="settings_video_framerate_title_des">选择视频输出帧率</string>
+    <string name="settings_video_framerate_15">15fps</string>
+    <string name="settings_video_framerate_30">30fps</string>
+    <string name="settings_video_framerate_default">30fps</string>
+    
+    <string name="settings_video_bitrate_title">比特率</string>
+    <string name="settings_video_bitrate_title_des">选择视频输出的带宽</string>
+	<string name="settings_video_bitrate_low_title">低</string>
+    <string name="settings_video_bitrate_middle_title">中</string>
+    <string name="settings_video_bitrate_high_title">高</string>
+    <string name="settings_video_bitrate_super_title">超高</string>
+
+    <string name="settings_video_camera_auto_focus">自动对焦</string>
+    <string name="settings_video_camera_auto_focus_des">设置是否自动对焦</string>  
+    
+   	<string name="settings_main_item_call">通话</string>
+	<string name="settings_main_item_call_des">设置通话参数</string>
+	<string name="settings_call_auto_answer">自动应答</string>
+	<string name="settings_call_auto_answer_des">设置是否自动应答</string>
+	
+	<string name="settings_main_item_others">其他</string>
+	<string name="settings_main_item_others_des">其他设置</string>
+	
+	
+	<string name="dialog_nav_ok">确定</string>
+	<string name="dialog_nav_cancel">取消</string>
+	
+	<string name="settings_others_reset">恢复出厂设置</string>
+	<string name="settings_others_reset_des">将删除一切用户设置信息</string>
+	<string name="settings_others_reset_dialog_title">恢复出厂设置</string>
+	<string name="settings_others_reset_dialog_warning">警告: 该操作将导致全部用户设置数据被删除。 是否继续？</string>
+	<string name="settings_others_reset_process_title">开始恢复出厂设置......</string>	
+	
+    <string name="settings_connection_protocol_tcp">TCP</string>
+    <string name="settings_connection_protocol_udp">UDP</string>
+    <string name="settings_connection_protocol_sctp">SCTP</string>
+    <string name="settings_connection_protocol_tls">TLS</string>
+    <string name="settings_connection_protocol_default">UDP</string>
+    
+    
+    
+    
+    <string name="camera_error_dialog_title">摄像头出错</string>
+    <string name="camera_error_dialog_connection">无法连接摄像设备! 呼叫失败!</string>
+    <string name="camera_error_dialog_preview">无法启动预览! 呼叫失败!</string>
+    <string name="camera_error_dialog_ok">确定</string>
+    
+    <string name="ims_error_title">IMS 错误</string>
+    <string name="ims_error_content">没有找到 IMS 客户端</string>
+    
+    <string name="network_error_dialog_title">网络无法连接</string>
+    <string name="network_error_dialog_message">无法连接到视频通话服务，请检查您的网络连接，或者联系您的服务供应商</string>
+    <string name="network_error_dialog_ok">确定</string>
+    
+    <string name="network_error_dialog_hotplug_title">网络被拔出</string>
+    <string name="network_error_dialog_hotplug_message">网络被拔出或松动，请检查！</string>
+    
+    <string name="stat_group_title_data_out">发送的数据</string>
+    <string name="stat_group_title_data_in">接收的数据</string>
+    <string name="stat_name_total_loss_rate">总丢包率</string>
+    <string name="stat_name_current_loss_rate">当前丢包率</string>
+    <string name="stat_name_jitter">Jitter抖动</string>
+    <string name="stat_name_bit_rate">通道码率</string>
+    <string name="stat_unit_rate">%</string>
+    <string name="stat_unit_ms">毫秒</string>
+    <string name="stat_unit_kbps">kbps</string>
+    
+    <string name="sip_error_des_CLIENT_ERROR">客户端错误Some error occurs on the device, possibly due to a bug</string>
+    <string name="sip_error_des_CROSS_DOMAIN_AUTHENTICATION">需要跨域认证</string>
+    <string name="sip_error_des_DATA_CONNECTION_LOST">数据连接丢失</string>
+    <string name="sip_error_des_INVALID_CREDENTIALS">无效凭据</string>
+    <string name="sip_error_des_INVALID_REMOTE_URI">远程URI是无效的</string>
+    <string name="sip_error_des_IN_PROGRESS">客户端任务在进行中，不能启动一个新的</string>
+    <string name="sip_error_des_NO_ERROR">可以忽略的错误</string>
+    <string name="sip_error_des_PEER_NOT_REACHABLE">无法到达对方</string>
+    <string name="sip_error_des_SERVER_ERROR">服务器返回错误</string>
+    <string name="sip_error_des_SERVER_UNREACHABLE">服务器不可达</string>
+    <string name="sip_error_des_SOCKET_ERROR">套接字错误</string>
+    <string name="sip_error_des_TIME_OUT">呼叫超时</string>
+    <string name="sip_error_des_TRANSACTION_TERMINTED">呼叫非正常结束</string>
+    
+        
+<!-- Preference key string -->
+    <string name="key_video_codec">video_codec</string>
+    <string name="key_video_resolution">video_resolution</string>
+    <string name="key_video_frame_rate">video_frameRate</string>
+    <string name="key_video_bit_rate">video_bitRate</string>
+    
+    <string name="key_camera_auto_focus">camera_autoFocus</string>
+    
+    <string name="key_camera_position_left">camera_left</string>
+    <string name="key_camera_position_top">camera_top</string>
+    <string name="key_camera_size_width">camera_width</string>
+    <string name="key_camera_size_height">camera_height</string>
+    
+    <string name="key_call_auto_answer">call_auto_answer</string>
+    
+    <string name="key_local_video_test">local_video_test</string>
+    
+    <string name="slingshot_contact_call_text">拨号</string>
+    
+ 	 <string name="diag_outgoing_call_launcher_main_menu_title">视频通话</string>   
+	 <string name="diag_outgoing_call_launcher_contact_list_title">联系人</string>     
+	 <string name="diag_outgoing_call_launcher_dialer_title">拨号</string>  
+	 <string name="diag_outgoing_call_launcher_history_title">通话记录</string>
+	 
+	 <string name="diag_outgoing_call_launcher_main_menu_item_quick_call">快速拨号</string>   
+	 <string name="diag_outgoing_call_launcher_main_menu_item_launch_app">启动设置界面</string>   
+	
+	 <string name="diag_outgoing_layout_call_text">呼叫</string>   
+	 <string name="diag_outgoing_btn_cancel_text">取消</string> 
+	 
+	 <string name="diag_outgoing_btn_switcher_num">数</string>  
+	 <string name="diag_outgoing_btn_switcher_eng">英</string> 
+	 
+	 <string name="diag_outgoing_historylist_footer_text">没有记录</string> 
+	 <string name="diag_outgoing_historylist_clear_text">清除记录</string> 
+	 
+	 <string name="toast_text_deny_new_call">当前无法呼叫其他用户</string>   
+	  <string name="toast_text_deny_launcher_iptv">当前通话中，无法切换到IPTV</string>  
+    
+	  <string name="diag_clear_histroy_title">清除所有记录？</string>
+    
+    <!-- SmartPortal -->
+    
+    <string name="portal_splash">Smart Home</string>
+     <string name="portal_menu_title_tv">TV</string>
+     <string name="portal_menu_title_vc">Video Conferencing</string>
+     <string name="portal_menu_title_training">Training Cloud</string>
+     <string name="portal_menu_title_control">Home Control</string>
+     <string name="portal_menu_title_surveillance">Home Surveillance </string>
+     <string name="portal_menu_title_life">Life Style</string>
+     
+    <string name="portal_launching_splash_text_tv">TV</string>
+    <string name="portal_launching_splash_text_vc">Video Conferencing</string>
+    <string name="portal_launching_splash_text_training">Training Cloud</string>
+    <string name="portal_launching_splash_text_control">Home Control</string>
+    <string name="portal_launching_splash_text_surveillance">Home Surveillance</string>
+    <string name="portal_launching_splash_text_life">Life Style</string>
+    
+    
+    
+    <string name="portal_menu_description_tv">Integrated China Telecom(上海电信)IPTV client and Cisco TV</string>
+    <string name="portal_menu_description_vc">Integrate with Cisco TP/Pad/cell phone/PC, plan to talk with Cisco IT if allow to integrate with the corporate TP network. If approve, we can use this box to have TP meeting at home</string>
+    <string name="portal_menu_description_training">Will integrate with Webex training center</string>
+    <string name="portal_menu_description_control">Integrate with our current home automation solution, can control the light, electronic cooker, air condition, curtain…</string>
+    <string name="portal_menu_description_surveillance">Integrate with our home surveillance solution</string>
+    <string name="portal_menu_description_life"> Covers various life style application like GP Doctor(云健康),  video call Forwarding(百事通), 售后支持中心（webex  support center solution）, Where are you (在哪里)</string>
+    
+    <string name="portal_tv_sub_diag_title_cisco">Cisco TV</string>
+    <string name="portal_tv_sub_diag_description_cisco">Integrated Cisco Omni IPTV client</string>
+    <string name="portal_tv_sub_diag_title_ctc">China Telecom IPTV</string>
+    <string name="portal_tv_sub_diag_description_ctc">Integrated China Telecom IPTV client </string>
+    <string name="portal_life_sub_diag_title_health">Health Hotline</string>
+    <string name="portal_life_sub_diag_description_health">Place a video call to your Health hotline</string>
+
+</resources>

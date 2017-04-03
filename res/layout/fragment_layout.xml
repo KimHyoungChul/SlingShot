@@ -1,0 +1,117 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:layout_marginTop="30dp"
+	android:layout_marginLeft="30dp"
+	android:layout_marginRight="30dp">
+	
+	<RelativeLayout
+	   	android:id="@+id/statusbar"
+		android:layout_width="fill_parent"
+	  	android:layout_height="36dp"
+	   	android:paddingRight="6dip"
+	   	android:paddingLeft="6dip"
+	   	android:background="@drawable/background">
+		<ImageView 
+	        android:layout_width="@android:dimen/app_icon_size"
+	        android:layout_height="@android:dimen/app_icon_size"
+	        android:layout_marginLeft="5dip"
+	        android:layout_marginRight="11dip"
+	        android:layout_gravity="center_vertical"
+	        android:scaleType="fitCenter"
+	    	android:src="@drawable/ic_cisco"/> 	   	
+		<LinearLayout
+			android:layout_width="fill_parent"
+		  	android:layout_height="fill_parent"
+		   	android:gravity="center" >
+		    <TextView 
+		        android:id="@+id/statusbar_text"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:gravity="center|left" 
+		        android:text="@string/fragment_layout_statusbar_text"/>
+		    
+		    <ImageView 
+		        android:id="@+id/statusbar_image"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginRight="11dip"
+		        android:layout_gravity="center|right"
+		        android:scaleType="fitCenter"/>
+		</LinearLayout>
+		
+		<LinearLayout
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_alignParentRight="true" 
+		   android:layout_alignParentBottom="true">
+			<TextView
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:textAppearance="?android:attr/textAppearanceSmall"
+			   android:text="@string/fragment_layout_app_ver_text"
+			   android:gravity="center" 
+			   android:textColor="@color/gray"
+			 />	
+			 
+			<TextView
+			   android:id="@+id/slingshot_version_text"
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:text="@string/slingshot_version"
+			   android:textAppearance="?android:attr/textAppearanceSmall"
+			   android:textStyle="bold"
+			   android:gravity="center" 
+			    android:textColor="@color/gray"
+			 />	
+			 <View
+			     android:layout_width="10dp"
+			   	 android:layout_height="fill_parent"
+			 />
+			<TextView
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:textAppearance="?android:attr/textAppearanceSmall"
+			   android:text="@string/fragment_layout_sys_ver_text"
+			   android:gravity="center" 
+			   android:textColor="@color/gray"
+			 />				 
+			<TextView
+			   android:id="@+id/system_version_text"
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:text="@string/slingshot_version"
+			   android:textAppearance="?android:attr/textAppearanceSmall"
+			   android:gravity="center" 
+			    android:textColor="@color/gray"
+			 />	
+		 
+		</LinearLayout>
+		
+	</RelativeLayout>	
+	
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent">
+	    
+	
+	    <fragment class="com.cisco.slingshot.ui.fragment.SelectionFragment"
+	            android:id="@+id/selections" 
+	            android:layout_weight="1"
+	            android:layout_width="0px" 
+	            android:layout_height="match_parent" />
+	    
+	   <FrameLayout 
+	       	android:id="@+id/selectionsDetails" 
+		    android:layout_weight="5"
+			android:layout_width="0px" 
+			android:layout_height="match_parent"/>    
+	    
+	</LinearLayout>    
+    
+</LinearLayout>

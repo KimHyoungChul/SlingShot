@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quick_call_tabhost"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+             
+            <com.cisco.slingshot.ui.quickcall.QuickCallContactListView
+                android:id="@+id/quick_call_tab_contactlist"
+                android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"
+                />
+            
+            
+            <com.cisco.slingshot.ui.quickcall.QuickCallDialPadView
+                android:id="@+id/quick_call_tab_dialer"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"          
+		    	android:gravity="center" />
+            
+           <com.cisco.slingshot.ui.quickcall.QuickCallHistoryListView
+                android:id="@+id/quick_call_tab_history"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"          
+		    	android:gravity="center" />
+            
+            </FrameLayout>
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+      android:key="call_auto_answer"
+      android:summary="@string/settings_call_auto_answer_des"
+      android:title="@string/settings_call_auto_answer"
+      android:defaultValue="false"
+  	/>
+
+</PreferenceScreen>

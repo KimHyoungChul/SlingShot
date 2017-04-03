@@ -1,0 +1,66 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:layout_margin="10dp"
+	android:background="@drawable/wallpaper_blue">
+	
+	<RelativeLayout
+	   	android:id="@+id/aquarius_top_bar"
+		android:layout_width="fill_parent"
+	  	android:layout_height="48dp"
+	   	android:layout_margin="6dip"
+	   	android:background="@drawable/shape_controlpanel_button_background">
+		<ImageView 
+	        android:layout_width="@android:dimen/app_icon_size"
+	        android:layout_height="@android:dimen/app_icon_size"
+	        android:layout_marginLeft="5dip"
+	        android:layout_marginRight="11dip"
+	        android:scaleType="fitCenter"
+	    	android:src="@drawable/ic_cisco" 
+	    	android:gravity="center"/> 	
+	    		
+		<LinearLayout
+			android:layout_width="fill_parent"
+		  	android:layout_height="fill_parent"
+		   	android:gravity="center" >
+		    <TextView 
+		        android:id="@+id/aquarius_top_bar_title"
+		        android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:gravity="center|left" 
+		        android:text="@string/portal_splash"
+		        android:textStyle="bold"
+				android:textSize="24sp"/>
+		</LinearLayout>
+		
+	</RelativeLayout>	
+	
+	
+		<!-- Control panel -->
+		
+
+	    
+	    <com.cisco.slingshot.ui.aquarius.AquariusGalleryMenu  
+	        android:id="@+id/aquarius_menu"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_alignParentBottom="true" 
+			android:layout_marginBottom="30dp"
+			/>
+	    
+	    
+	    <com.cisco.slingshot.ui.aquarius.AquariusGalleryView 
+	        android:id="@+id/aquarius_menu_detail_container"
+		    android:layout_below="@id/aquarius_top_bar"
+	       	android:layout_above="@id/aquarius_menu"
+	       	android:layout_width="wrap_content" 
+			android:layout_height="360dp"
+			android:layout_centerInParent="true"
+			android:layout_margin="20dp" />
+
+
+	
+
+</RelativeLayout>
